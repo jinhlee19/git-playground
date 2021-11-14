@@ -10,10 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://admin-rafy:tHkuGHdSKnEidlBl@cluster0.yawum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
-// mongoose.connect("mongodb://localhost:27017/todolistDB");
-// mongodb+srv://admin-rafy:tHkuGHdSKnEidlBl@cluster0.yawum.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-// ITEM SCHEMA
+mongoose.connect("mongodb+srv://admin-rafy:tHkuGHdSKnEidlBl@cluster0.yawum.mongodb.net/todolistDB");
 
 const itemsSchema = {
   name: String
